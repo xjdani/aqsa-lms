@@ -1,0 +1,19 @@
+{
+  "name": "aqsa-lms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./assets/css/style.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./assets/css/style.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Aqsa LMS WordPress Theme with Tailwind CSS",
+  "devDependencies": {
+    "autoprefixer": "^10.5.2",
+    "postcss": "^8.5.16",
+    "tailwindcss": "^3.4.1"
+  }
+}
