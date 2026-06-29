@@ -4,31 +4,51 @@
 __pycache__/
 *.o
 *.obj
+*.class
+*.exe
+*.dll
+*.so
+*.a
+*.out
 
 # Dependencies
-.venv/
-venv/
 node_modules/
+vendor/
+*.zip
+*.tar.gz
+*.tar
+*.gz
+*.rar
+*.7z
 
 # Logs and temp files
 *.log
 *.tmp
 *.swp
+*.swo
 
 # Environment
 .env
 .env.local
-*.env.*
+.env.*
 
 # Editors
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# WordPress specific
-wp-content/cache/
-*.sql
-wp-config.php
-wp-content/uploads/
+# System files
+.DS_Store
+Thumbs.db
 
-# Original rules preserved
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Build directories
+dist/
+build/
+target/
 ```
