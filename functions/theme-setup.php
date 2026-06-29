@@ -34,12 +34,6 @@ if ( ! function_exists( 'aqsa_lms_setup' ) ) :
         add_theme_support( 'post-thumbnails' );
         set_post_thumbnail_size( 1200, 675, true );
 
-        // Register navigation menus.
-        register_nav_menus( array(
-            'primary'   => esc_html__( 'Primary Menu', 'aqsa-lms' ),
-            'footer'    => esc_html__( 'Footer Menu', 'aqsa-lms' ),
-        ) );
-
         /*
          * Switch default core markup for search form, comment form, and comments
          * to output valid HTML5.
@@ -54,13 +48,7 @@ if ( ! function_exists( 'aqsa_lms_setup' ) ) :
             'script',
         ) );
 
-        // Set up the WordPress custom logo support.
-        add_theme_support( 'custom-logo', array(
-            'height'      => 80,
-            'width'       => 200,
-            'flex-height' => true,
-            'flex-width'  => true,
-        ) );
+
 
         // Add support for custom background.
         add_theme_support( 'custom-background', array(

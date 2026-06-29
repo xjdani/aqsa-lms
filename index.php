@@ -21,7 +21,7 @@ get_header();
                         <?php if ( has_post_thumbnail() ) : ?>
                             <?php the_post_thumbnail( 'medium' ); ?>
                         <?php else : ?>
-                            <img src="<?php echo AQSA_LMS_URI; ?>/assets/images/blog-placeholder.png" alt="<?php the_title_attribute(); ?>">
+                            <img src="<?php echo AQSA_LMS_URI; ?>/assets/images/blog-placeholder.svg" alt="<?php the_title_attribute(); ?>">
                         <?php endif; ?>
                     </div>
                     <div class="post-content">

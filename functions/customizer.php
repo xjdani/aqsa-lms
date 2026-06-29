@@ -97,7 +97,6 @@ if ( ! function_exists( 'aqsa_lms_customize_register' ) ) :
                 'type'    => 'url',
             )
         );
-
         // CTA Section
         $wp_customize->add_section(
             'aqsa_lms_cta_section',

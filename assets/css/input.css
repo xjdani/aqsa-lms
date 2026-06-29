@@ -1,1 +1,6 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@source "./components/header";
+@source "./components/footer";
+@source "./functions/features";
+@source "./functions/customiser";
