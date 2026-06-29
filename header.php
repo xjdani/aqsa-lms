@@ -11,40 +11,10 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<header class="site-header">
-    <div class="header-container">
-        <div class="site-branding">
-            <?php
-            if ( has_custom_logo() ) :
-                the_custom_logo();
-            else :
-                ?>
-                <h1 class="site-title">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                        <?php bloginfo( 'name' ); ?>
-                    </a>
-                </h1>
-                <?php
-            endif;
-            ?>
-        </div>
+<?php
+// Load desktop header for larger screens
+get_template_part( 'components/header/header', 'desktop' );
 
-        <nav class="main-navigation" id="site-navigation">
-            <?php
-            wp_nav_menu(
-                array(
-                    'theme_location' => 'primary',
-                    'menu_id'        => 'primary-menu',
-                    'menu_class'     => 'primary-menu',
-                    'container'      => false,
-                    'fallback_cb'    => false,
-                )
-            );
-            ?>
-        </nav>
-
-        <button class="mobile-menu-toggle" aria-label="<?php esc_attr_e( 'Toggle Menu', 'aqsa-lms' ); ?>">
-            <span>&#9776;</span>
-        </button>
-    </div>
-</header>
+// Load mobile header for smaller screens
+get_template_part( 'components/header/header', 'mobile' );
+?>
