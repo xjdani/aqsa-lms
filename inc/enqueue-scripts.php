@@ -23,11 +23,19 @@ if ( ! function_exists( 'aqsa_lms_scripts' ) ) :
             null
         );
 
-        // Main stylesheet
+        // Main stylesheet from assets
+        wp_enqueue_style(
+            'aqsa-lms-main-style',
+            AQSA_LMS_URI . '/assets/css/style.css',
+            array(),
+            AQSA_LMS_VERSION
+        );
+
+        // Theme stylesheet (required by WordPress)
         wp_enqueue_style(
             'aqsa-lms-style',
             get_stylesheet_uri(),
-            array(),
+            array('aqsa-lms-main-style'),
             AQSA_LMS_VERSION
         );
 
